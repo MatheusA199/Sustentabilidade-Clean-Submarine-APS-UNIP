@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(62, 188, 230);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: #f88f06;
+}
+
+nav .menu-btn i{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 920px) {
+    nav .menu-btn i{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: rgb(13, 141, 184);
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    nav ul.open{
+        left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a {
+        font-size: 23px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+        background: none;
+        color: #f88f06;
+    }   
+}
+
+body{
+    background-image: url("FotomarPeixe.png");
+    background-size: contain;
+   
+}
+main{
+    background-color: rgb(96, 209, 247);
+    background-image: linear-gradient(to bottom, rgb(19, 177, 230), rgb(12, 146, 190));
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    max-width: 90%;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    min-width: 90%;
+}
+
+figure{
+    border-width: 6px;
+    border-color: black;
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 45px;
+}
+figcaption{
+    color: #fff;
+    font-style: italic;
+    font-size: 17px;
+}
+
+h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 45px;
+    margin-left: 45px;
+    margin-right: 45px;
+    color: #ffffff;
+    text-shadow: 0.15px 1px 0px black;
+}
+
+h2, h3, h4{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow: 0.15px 1px 0px black;
+}
+h2{
+    font-size: 35px;
+    margin-top: 75px;
+}
+p{
+    font-size: 23px;
+    text-align: justify;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    color: #f2f2f2;
+    text-shadow: 0.25px 0.25px 0px rgb(0, 0, 0);
+    line-height:35px;
+    word-spacing: 3px;
+}
+
+footer{
+    background-color: rgb(0, 129, 172);
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
