@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleSituaçãoatual.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Clean-Submarine</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>  <!--Inicio no Menu-->
+            <div class="logo"> 
+                <a href="index.html">
+                    <img src="LogotipoFinal.png" alt="Logotipo do Site" id="logo" width="145px">
+                </a>
+            </div>    
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+            </div>
+    
+            <ul>
+                
+                <li>
+                   <a href="index.html">HOME</a> 
+                </li>
+                
+                <li>
+                    <a href="indexSituaçãoatual.html" class="active">Situação Atual</a>  
+                </li>
+    
+                <li>
+                    <a href="indexDesafios.html">Desafios</a>
+                </li>
+    
+                <li>
+                    <a href="indexOngs.html">ONGs</a> 
+                </li>
+    
+                <li>
+                    <a href="indexSobrenos.html">Sobre Nós</a> 
+                </li>
+            </ul>
+        </nav>      <!--Termino no Menu-->
+    </header>
+
+    <script>
+		var ul = document.querySelector('nav ul');
+		var menuBtn = document.querySelector('.menu-btn i');
+
+		function menuShow() {
+   			 if (ul.classList.contains('open')) {
+        		ul.classList.remove('open');
+    	}
+			else{
+        	ul.classList.add('open');
+   	 	}
+    }
+	</script>
+    
+    <main>
+        <article>   <!--Começo texto situação atual/Em article-->
+
+            <header>
+                <h1>Situação Atual: o que a ação humana causou nos oceanos?</h1>
+            </header>
+            <figure>
+                <img src="MArSujo.gif" alt="foto mar sujo" width="50%" >
+                <figcaption>Foto: Praia suja de lixo.</figcaption>
+            </figure>
+            <p>
+                Na mídia, notícias sobre o meio ambiente, as quais evidenciam a triste situação que 
+                diversas regiões do planeta sofrem com a ação antrópica, são comuns. Com isso, 
+                tal situação nos mares e rios não diferem, segundo a ONU (Organização das Nações Unidas), 
+                cerca de 10 milhões de toneladas de lixo acabam nos oceanos todos os anos. Dentre os 
+                principais vilões estão o plástico, o qual representa 80% de todos os dejetos que 
+                param no mar. Por isso, é frequente imagens de animais marítimos presos ou até mortos por 
+                conta disso, não à toa, a ONG Sea Shepherd criou a campanha “Torture”, justamente para 
+                mostrar o que resíduos plásticos podem fazer com a fauna marítima, exibindo animais sofrendo 
+                devido a tal categoria de lixo.
+            </p>    
+                <h2>Como somos afetados pela poluição nos mares?</h2>
+            <p>
+                Por outro lado, além dos prejuízos que espécies oceânicas passam, nós seres humanos também 
+                sofremos por conta de nossas ações no mundo. A pesca desenfreada, por exemplo, que ataca o 
+                ciclo de reprodução de vários peixes, colocando-os em risco de extinção, afeta a nossa própria 
+                alimentação, já que a qualidade do alimentado e sua disponibilidade decai. Nesse contexto, um 
+                fenômeno chamado magnificação trófica se faz relevante, visto que ele é o acumulo de substâncias 
+                toxicas ao longo da cadeia alimenta. Dessa maneira, alimentos que provem do mar, se contaminados 
+                por mercúrio, por exemplo, todos aqueles que comerem também se intoxicarão. Portanto, se os 
+                mares sofrerem com poluição e nossas ações, a qualidade de vida humana cairá, consequentemente.
+            </p>
+            
+            <figure>
+                <img src="bioacumulacao.jpeg" alt="Infografico sobre bioacumulacao" width="45%">
+                <figcaption>Foto: Infográfico sobre magnificação trófica.</figcaption>
+            </figure>
+
+               <h3>Brasil: como está o cenário no país?</h3>
+            <p>
+                No Brasil, a situação não é diferente. Em nosso país, diversas baias e rios estão extremamente 
+                poluídas, além de vários desastres que afetaram os recursos marítimos brasileiros. Em 2019, 
+                exemplificando, ocorreu um derramamento de óleo nas praias nordestinas, causando diversos problemas 
+                para as populações da região, que perderam sua fonte de renda, e a biodiversidade, prejudicada pelo 
+                ataque a seu habitat. Além disso, diversos rios estão poluídos por conta do descarte de esgoto em 
+                suas águas, como ocorre na baía de Guanabara, que recebe os dejetos da cidade do Rio de Janeiro. Nesse 
+                sentido, o Brasil precisa dar mais atenção as riquezas hídricas da nação, para solucionar tais problemas.
+            </p>
+
+            <figure>
+                <img src="baiaGuanabara.jpg" alt="Baia de Guanabara suja" width="45%">
+                <figcaption>Foto: Baía de Guanabara suja.</figcaption>
+            </figure>
+                
+            <p>
+                Portanto, é notório que há muito trabalho para ser realizado, seja no Brasil, seja no mundo. Com isso, 
+                é preciso superar vários desafios, para reverter tal situação.
+            </p>
+        </article> <!--Fim texto situação atual-->
+    </main>
+    
+    <footer>       <!--Começo do Footer-->
+        <p>&copy; 2022 Clean-Submarine</p>
+    </footer>       <!--Fim do Footer-->
+
+
+</body>
+</html>

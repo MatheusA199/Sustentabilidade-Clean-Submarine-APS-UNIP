@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleHomepag.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Clean-Submarine</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>  <!--Inicio no Menu-->
+            <div class="logo"> 
+                <a href="index.html">
+                    <img src="LogotipoFinal.png" alt="Logotipo do Site" id="logo" width="145px">
+                </a>
+            </div>
+    
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+            </div>
+    
+            <ul>
+                
+                <li>
+                   <a href="indexhomepag.html" class="active">HOME</a> 
+                </li>
+                
+                <li>
+                    <a href="indexSituaçãoatual.html">Situação Atual</a>  
+                </li>
+    
+                <li>
+                    <a href="indexDesafios.html">Desafios</a>
+                </li>
+    
+                <li>
+                    <a href="indexOngs.html">ONGs</a> 
+                </li>
+    
+                <li>
+                    <a href="indexSobrenos.html">Sobre Nós</a> 
+                </li>
+            </ul>
+        </nav>      <!--Termino no Menu-->
+    </header>
+
+    <script>
+		var ul = document.querySelector('nav ul');
+		var menuBtn = document.querySelector('.menu-btn i');
+
+		function menuShow() {
+   			 if (ul.classList.contains('open')) {
+        		ul.classList.remove('open');
+    	}
+			else{
+        	ul.classList.add('open');
+   	 	}
+    }
+	</script>
+    
+    
+    <main>
+        <article>     <!--Começo conteudo HomePag-->
+            <figure>
+                <img src="imageHomepage.png" alt="Comparação Mar limpo, Mar sujo" width="80%">
+            </figure>
+                        
+            <header>
+                <h1>Sustentabilidade: Precisamos pensar nos mares e oceanos também</h1>
+            </header>
+            
+            <p>
+                Os mares cada vez mais sofrem pela ação antrópica no mundo. Nesse cenário, não é raro ver notícias de 
+                oceanos infestados de lixos ou de espécies ameaçadas de extinção, pela pesca desenfreada e pela 
+                destruição de seus habitats.
+            </p>
+            <p>
+                Com isso, é primordial conhecer e compreender o assunto, de modo que se possa agir para 
+                resolver o problema. Dessa maneira, tornando o mundo mais sustentável, por uma boa conciliação 
+                entre economia e a vida, para que as gerações atuais e futuras não sofram com a degradação do ambiente marítimo.
+            </p>
+            <p>
+                Por isso, criamos esse site, com o intuito de conscientizar as pessoas acerca do tema, para elas 
+                poderem perceber como essa pauta afeta suas vidas. Ademais, mostrar ONGs que atuam na área, 
+                para que o leitor possa, além de conhecê-las, encontrar um meio de ajudar na causa da vida 
+                marítima, por meio do apoio a tais instituições.
+            </p>
+        </article>      <!--Termino Texto HomePag-->
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Clean-Submarine</p>
+    </footer>
+</body>
+</html>

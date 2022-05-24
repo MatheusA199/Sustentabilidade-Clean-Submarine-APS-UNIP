@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styleOngs.css">
+    <title>Clean-Submarine</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>  <!--Inicio no Menu-->
+            <div class="logo"> 
+                <a href="index.html">
+                    <img src="LogotipoFinal.png" alt="Logotipo do Site" id="logo" width="145px">
+                </a>
+            </div>    
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+            </div>
+    
+            <ul>
+                
+                <li>
+                   <a href="index.html">HOME</a> 
+                </li>
+                
+                <li>
+                    <a href="indexSituaçãoatual.html">Situação Atual</a>  
+                </li>
+    
+                <li>
+                    <a href="indexDesafios.html">Desafios</a>
+                </li>
+    
+                <li>
+                    <a href="indexOngs.html" class="active">ONGs</a> 
+                </li>
+    
+                <li>
+                    <a href="indexSobrenos.html">Sobre Nós</a> 
+                </li>
+            </ul>
+        </nav>      <!--Termino no Menu-->
+    </header>
+
+    <script>
+		var ul = document.querySelector('nav ul');
+		var menuBtn = document.querySelector('.menu-btn i');
+
+		function menuShow() {
+   			 if (ul.classList.contains('open')) {
+        		ul.classList.remove('open');
+    	}
+			else{
+        	ul.classList.add('open');
+   	 	}
+    }
+	</script>
+    
+
+    <main>   <!--Main article sobre ONGs-->
+        <article> <!--Article sobre as ONGs que citamos-->
+
+            <header>        <!--cabeçalho do article sobre ONGs-->
+                
+                <h1>ONGs que ajudam os Mares!</h1>
+
+                <h2>
+                    Separamos algumas ONGs para você poder ter um meio de corroborar na causa, por meio do apoio a 
+                    tais instituições que citamos abaixo. Caso queira, sinta-se à vontade para as ajudas de algum modo!
+                </h2>
+            </header>       
+            
+                <h3>
+                    Eco local Brasil
+                </h3>
+                
+                <p>
+                    Eco Local Brasil é uma ONG que há mais de 15 anos luta contra o acúmulo de lixo marítimo. Dentre suas 
+                    ações estão mutirões de limpeza, conscientização ambiental em escolas e separação dos dejetos recolhidos, 
+                    desse modo, descobrindo a procedência desse lixo e encanhando-o ao destino adequado. Além disso, em 2021, 
+                    começaram o projeto Cooperativa do Mar, a qual visa trabalhar com os resíduos retirados do mar, com isso, 
+                    dar-lhes um caminho para serem reciclados e transformá-los em matéria-prima para indústria novamente.
+                </p>
+                <a href="https://ecolocalbrasil.org.br/atitude-pelos-oceanos/">
+                    <figure>
+                        <img src="LogoEcoLocalGarrafa.png" alt="Logotipo, EcoLocalBrasil" width="320px"> 
+                        <figcaption>
+                            Visite o site da Eco Local Brasil!
+                    </figcaption>
+                    </figure>
+                </a>
+
+                <h3>
+                    ABLM
+                </h3>
+                
+                <p>
+                    A Associação Brasileira de Combate ao Lixo no Mar (ABLM) é uma ONG, que, ao longo de sua existência, 
+                    realizou diversas ações para torna os mares brasileiros mais limpos. Em 2019, por exemplo, ajudaram na 
+                    limpeza do derramamento de óleo que ocorreu na costa nordestina naquele ano.  
+                </p>
+
+                <a href="https://ablm.org.br/">
+                    <figure>
+                        <img class="ablm" src="ABLM_LOGOTIPO.png" alt="Logotipo, EcoLocalBrasil" width="320px">
+                        <figcaption>
+                                Visite o site da ABLM!
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <h3>
+                    Sea Shepherd
+                </h3>
+                
+                <p>
+                    Fundada em 1977, semelhante organização realizada vários projetos ao longo do mundo. Dentre os projetos 
+                    no Brasil, há a Campanha Ondas limpas, a qual visa realiza mutirões para remover o lixo marítimo e educar 
+                    as pessoas para consumir e descartar de forma sustentável. Além disso, atuam preservação a fauna marítima, 
+                    com projetos como “Expedição Boto da Amazônia”, que trabalha na conservação dessa espécie, e “Campanha Borrifos”, 
+                    que monitora as baleias jubarte, na costa de Ilhabela.     
+                </p>
+
+                <a href="https://seashepherd.org.br/">
+                    <figure>
+                        <img src="logoSeashepherdFinal.png" alt="Logotipo, EcoLocalBrasil" width="320px">
+                        <figcaption>
+                            Visite o site da Sea Shepherd!
+                    </figcaption> 
+                    </figure>
+                </a>
+
+                <h3>
+                    Oceana
+                </h3>
+
+                <p>
+                    Criada em 2001, é a maior fundação internacional, na área de preservação dos mares, do mundo. Ela atua em 
+                    diversas frentes, desde remoção de lixo marítimo, especialmente plástico, até a recuperação de espécies 
+                    ameaçadas, como o pargo e o garoupa-verdadeira.                     
+                </p>
+
+                <a href="https://brasil.oceana.org/">
+                    <figure class="distancia">
+                        <img class="oceana" src="Oceana.png" alt="Logotipo, EcoLocalBrasil" width="320px"> 
+                        <figcaption>
+                            Visite o site da Oceana!
+                        </figcaption>
+                    </figure>
+                </a>    
+        </article>  <!--Fim do article-->
+    </main>   <!--Fim Principal Conteudo PAg ONGs--> 
+         
+    <footer>       <!--Começo do Footer-->
+        <p class="copy">&copy; 2022 Clean-Submarine</p>
+    </footer>       <!--Fim do Footer-->
+
+</body>
+</html>
+
+
+
+
+ 
